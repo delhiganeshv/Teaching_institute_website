@@ -1,18 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Public Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
 }
 
-:root{
-    --PrimaryColor:#075e89;
-    --LightColor: #fff;
-    --DarkColor: #585858;
-    --SecondaryColor: #f99a00;
-
+:root {
+  --PrimaryColor: #075e89;
+  --LightColor: #fff;
+  --DarkColor: #585858;
+  --SecondaryColor: #f99a00;
 }
 
-.primary-color{
-    background-color: var(--PrimaryColor);
-    
+.primary-color {
+  background-color: var(--PrimaryColor);
+}
+
+/******** Navbar ********/
+nav {
+  background: #fff !important;
+  box-shadow: 1px 1px 2px #4444;
+}
+
+nav .navbar-brand {
+  color: var(--bs-orange);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+}
+.navbar-toggler {
+  outline: none !important;
+  padding: none !important;
+}
+
+/********* Carousel ********/
+.carousel-inner .carousel-item {
+  width: 100%;
+  height: 100vh;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-inner .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner .carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 40%;
+  left: 0;
+  right: 0;
 }
