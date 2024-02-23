@@ -17,12 +17,19 @@
 
 /******** Navbar ********/
 nav {
-  background: #fff !important;
+  background: var(--LightColor) !important;
   box-shadow: 1px 1px 2px #4444;
 }
 
 nav .navbar-brand {
   color: var(--bs-orange);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+nav .navbar-brand span {
+  color: var(--DarkColor);
   font-size: 1.5rem;
   font-weight: 600;
   padding-top: 5px;
@@ -61,7 +68,44 @@ nav .navbar-brand {
   align-items: center;
   position: absolute;
   bottom: 0;
-  top: 40%;
+  top: 37%;
   left: 0;
   right: 0;
+}
+
+.carousel-inner .carousel-caption h2 {
+  color: var(--LightColor);
+  margin-bottom: 7px;
+  font-size: 42px;
+  font-weight: 600;
+  width: 80%;
+  margin: 0 auto 5px auto;
+}
+
+.carousel-inner .carousel-caption span {
+  color: var(--bs-orange);
+}
+
+.carousel-inner .carousel-caption p {
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-caption h2 {
+    font-size: 30px;
+  }
+  .carousel-inner .carousel-caption p {
+    font-size: 18px;
+  }
+
+@media (max-width: 576px) {
+  .carousel-inner .carousel-caption h2 {
+    font-size: 25px;
+  }
+  .carousel-inner .carousel-caption p {
+    font-size: 13px;
+  }
+  
 }
