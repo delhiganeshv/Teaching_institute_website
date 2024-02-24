@@ -140,8 +140,8 @@ nav .navbar-brand span {
   padding: 10px 10px;
 }
 /**** review *****/
-#review {
-  background-color: var(--LightColor);
+.review {
+  background: rgba(255, 255, 255, 1);
 }
 
 /** contact us**/
